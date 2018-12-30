@@ -20,7 +20,7 @@ A lightweight plugin for BeatSaber to integrate Discord Rich Presence status for
 4. Extract the contents into your BeatSaber's installation folder
 5. For Steam: `\steamapps\common\Beat Saber\`
 6. For Oculus: `\Oculus Apps\Software\hyperbolic-magnetism-beat-saber\`
-7. If you want, edit the LSaberRP.txt in '\Beat Saber\UserData\` to configure the mod
+7. If you want, edit the LSaberRP.txt in `\Beat Saber\UserData\` to configure the mod
 8. Done! (yay!)
           
           
