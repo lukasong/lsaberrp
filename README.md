@@ -16,7 +16,7 @@ A lightweight plugin for BeatSaber to integrate Discord Rich Presence status for
 # Installation        
 1. Install IPA (If you have mods, you have this!)
 2. If you don't have already have mods, you can easily install them using [ModSaber](https://www.modsaber.org/)
-3. Download and unzip the release
+3. Download and unzip the [release](https://github.com/lukasong/lsaberrp/releases)
 4. Extract the contents into your BeatSaber's installation folder
 5. For Steam: `\steamapps\common\Beat Saber\`
 6. For Oculus: `\Oculus Apps\Software\hyperbolic-magnetism-beat-saber\`
