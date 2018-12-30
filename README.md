@@ -10,6 +10,7 @@ A lightweight plugin for BeatSaber to integrate Discord Rich Presence status for
 * Supports Custom Songs
 * Light weight
 * Configurable
+* Supports game modifiers such as **[No Fail]** and **[Instafail]**
     
     
 # Installation        
@@ -28,6 +29,7 @@ A lightweight plugin for BeatSaber to integrate Discord Rich Presence status for
 - [ ] Support variables such as {SongName} in configuration
 - [ ] Support displaying the game mode
 - [ ] Support [BeatSaber Unofficial Multiplayer](https://github.com/andruzzzhka/BeatSaberMultiplayer/releases)
+- [ ] Support more **optional** game modifiers such as [Slow Song]
           
        
 # Editing
