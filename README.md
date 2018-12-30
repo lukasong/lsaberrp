@@ -29,7 +29,7 @@ A lightweight plugin for BeatSaber to integrate Discord Rich Presence status for
 - [ ] Support variables such as {SongName} in configuration
 - [ ] Support displaying the game mode
 - [ ] Support [BeatSaber Unofficial Multiplayer](https://github.com/andruzzzhka/BeatSaberMultiplayer/releases)
-- [ ] Support more **optional** game modifiers such as [Slow Song]
+- [ ] Support more **optional** game modifiers such as **[Slow Song]**
           
        
 # Editing
@@ -39,3 +39,6 @@ To edit/make your own version, you will need [Discord RPC](https://github.com/di
 # Credits
 Thanks to [Xyonico's](https://github.com/xyonico/BeatSaberDiscordPresence) original BeatSaber Discord Presence mod that inspired me to make this! It hasn't been updated in a while, and I love Discord RP, so I decided to make my own version based upon theirs.
 
+
+# Final Note
+Problems, suggestions, should I remove something, request, or just want to yell at me about how bad my code is? Or if you have trouble installing or using? You can message me anytime on Discord at **luka#8375**
