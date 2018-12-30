@@ -31,9 +31,9 @@ A lightweight plugin for BeatSaber to integrate Discord Rich Presence status for
           
        
 # Editing
-To edit/make your own version, you will need [Discord RPC](https://github.com/discordapp/discord-rpc/releases), or you can use the one packaged into the release zip. If you are new to working with BeatSaber, I'd recommend reading [this](https://pastebin.com/raw/Md5VLALp) (but use 4.6 instead of 3.5 target framework)
+To edit/make your own version, you will need [Discord RPC](https://github.com/discordapp/discord-rpc/releases), or you can use the one packaged into the release zip. If you are new to working with BeatSaber, I'd recommend reading [this](https://pastebin.com/raw/Md5VLALp) (but use 4.6 instead of 3.5 target framework).
 
 
 # Credits
-Thanks to [Xyonico's](https://github.com/xyonico/BeatSaberDiscordPresence) original BeatSaber Discord Presence mod that inspired me to make this! It hasn't been updated in a while, and I love Discord RP, so I decided to make my own version.
+Thanks to [Xyonico's](https://github.com/xyonico/BeatSaberDiscordPresence) original BeatSaber Discord Presence mod that inspired me to make this! It hasn't been updated in a while, and I love Discord RP, so I decided to make my own version based upon theirs.
 
