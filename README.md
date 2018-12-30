@@ -13,21 +13,21 @@ A lightweight plugin for BeatSaber to integrate Discord Rich Presence status for
     
     
 # Installation        
- Markup : 1. Install IPA (If you have mods, you have this!)
-              1.1. If you don't have already have mods, you can easily install them using [ModSaber](https://www.modsaber.org/)
-          2. Download and unzip the release
-          3. Extract the contents into your BeatSaber's installation folder
-              3.1. For Steam: `\steamapps\common\Beat Saber\`
-              3.2. For Oculus: `\Oculus Apps\Software\hyperbolic-magnetism-beat-saber\`
-          4. If you want, edit the LSaberRP.txt in '\Beat Saber\UserData\` to configure the mod
-          5. Done!
+1. Install IPA (If you have mods, you have this!)
+    1.1. If you don't have already have mods, you can easily install them using [ModSaber](https://www.modsaber.org/)
+2. Download and unzip the release
+3. Extract the contents into your BeatSaber's installation folder
+    3.1. For Steam: `\steamapps\common\Beat Saber\`
+    3.2. For Oculus: `\Oculus Apps\Software\hyperbolic-magnetism-beat-saber\`
+4. If you want, edit the LSaberRP.txt in '\Beat Saber\UserData\` to configure the mod
+5. Done! (yay!)
           
           
 # Planned Features        
- Markup : - [x] Support configuration
-          - [ ] Support variables such as {SongName} in configuration
-          - [ ] Support displaying the game mode
-          - [ ] Support [BeatSaber Unofficial Multiplayer](https://github.com/andruzzzhka/BeatSaberMultiplayer/releases)
+- [x] Support configuration
+- [ ] Support variables such as {SongName} in configuration
+- [ ] Support displaying the game mode
+- [ ] Support [BeatSaber Unofficial Multiplayer](https://github.com/andruzzzhka/BeatSaberMultiplayer/releases)
           
        
 # Editing
