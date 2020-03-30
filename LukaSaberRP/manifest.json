@@ -1,0 +1,16 @@
+﻿{
+  "$schema": "",
+  "author": "Luka Song",
+  "description": "Add Discord Rich Presence to your Beatsaber!",
+  "features": [],
+  "gameVersion": "1.8.0",
+  "icon": "",
+  "id": "LSaberRP",
+  "name": "LSaberRP",
+  "version": "2.0.0",
+  "dependsOn": {},
+  "links": {
+    "project-home": "https://github.com/lukasong/lsaberrp",
+    "project-source": "https://github.com/lukasong/lsaberrp"
+  }
+}
