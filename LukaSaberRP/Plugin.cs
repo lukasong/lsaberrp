@@ -1,4 +1,4 @@
-﻿using IPA;
+using IPA;
 using System;
 using System.Reflection;
 using UnityEngine;
@@ -80,13 +80,21 @@ namespace LukaSaberRP
             try
             {
                 //Fetching!
+                Boolean safetyNet = false;
                 Logger.Info(Name + " | Fetching resources for Discord RP.");
                 BS_Utils.Gameplay.LevelData thisData = BS_Utils.Plugin.LevelData;
                 string songDifficulty = thisData.GameplayCoreSceneSetupData.difficultyBeatmap.difficulty.ToString();
                 string songName = thisData.GameplayCoreSceneSetupData.difficultyBeatmap.level.songName.ToString();
                 string songAuthor = thisData.GameplayCoreSceneSetupData.difficultyBeatmap.level.songAuthorName.ToString();
                 string songDuration = thisData.GameplayCoreSceneSetupData.difficultyBeatmap.level.songDuration.ToString();
-                songDuration = songDuration.Substring(0, songDuration.IndexOf("."));
+                try
+                {
+                    songDuration = songDuration.Substring(0, songDuration.IndexOf("."));
+                }catch(Exception e)
+                {
+                    Logger.Info(Name + " | Skipping substringing the song duration... custom song? Take a look: " + songDuration);
+                    safetyNet = true;
+                }
                 songDuration = songDuration.Replace(".", "");
                 int songSeconds = Int32.Parse(songDuration);
                 songDifficulty += GetGamemode();
@@ -99,8 +107,16 @@ namespace LukaSaberRP
                     Presence.details += " [" + songAuthor + "]";
                 }
                 Presence.state = songDifficulty;
-                //Presence.startTimestamp = (long)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds; naaah lets be cool and do a time remaining
-                Presence.endTimestamp = (long)(DateTime.UtcNow + +new TimeSpan(0, 0, songSeconds)).Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+                /*if (safetyNet == true)
+                {
+                    Logger.Info(Name + " | Safety net e nabled, setting time to be elapsed rather than remaining. I'll look for a future update to BS Utils or a fix on my own for this, not sure whats going on. Sorry!");
+                    Presence.startTimestamp = (long)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+                }
+                else
+                {
+                    Presence.endTimestamp = (long)(DateTime.UtcNow + +new TimeSpan(0, 0, songSeconds)).Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+                }*/
+                Presence.startTimestamp = (long)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
                 Presence.largeImageKey = "beatsaberplaying";
                 Presence.largeImageText = igLargeImageText;
                 Presence.smallImageKey = "beatsaberlogo";
@@ -108,8 +124,7 @@ namespace LukaSaberRP
                 DiscordRpc.UpdatePresence(Presence);
             }catch(Exception e)
             {
-                Logger.Info("Error geting game details...."); BSEvents.gameSceneLoaded += this.onGameLoaded;
-                BSEvents.menuSceneLoaded += this.onMenuLoaded;
+                Logger.Info("Error geting game details...." + e); 
             }
         }
 
