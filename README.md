@@ -3,8 +3,8 @@ A lightweight plugin for BeatSaber to integrate Discord Rich Presence status for
 ![Preview Screenshot](https://raw.githubusercontent.com/lukasong/lsaberrp/master/imgs/LSaberRP%20In%20Game%202.png)
 ![Preview Screenshot](https://raw.githubusercontent.com/lukasong/lsaberrp/master/imgs/LSaberRP%20In%20Menu.png)
 
-# 2020 April (March 29th, really) Update
-Hey all, a small update. I haven't been maintaining this mod but I did add an updated Plugin.cs for Beatsaber 1.8.0. :)
+# 2020 May Update
+Hey all, a small update. I posted the compiled version of the updated mod under "Releases." Will it work by the time you are reading this? Maybe. It was designed for 1.8.0. 
 
 
 # Features
